@@ -4,3 +4,11 @@
 #amount{
   width: 50px;
 }
+body{
+  background-color: black;
+  color: white;
+}
+.card {
+  background-color: blue;
+  color: white;
+}

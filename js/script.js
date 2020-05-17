@@ -65,3 +65,36 @@ order.prototype.price = function () {
       totalPrice = singlePizzaPrice * this.quantity;
     }
   }
+  if (this.size == "medium") {
+    this.toppings.forEach(function(topping) {
+      switch (topping) {
+        case "pepperoni":
+          singleToppingPrice = 100;
+          break;
+        case "onions":
+          singleToppingPrice = 80;
+          break;
+        case "sausage":
+          singleToppingPrice = 140;
+          break;
+        case "bacon":
+          singleToppingPrice = 200;
+          break;
+        case "extra-cheese":
+          singleToppingPrice = 150;
+          break;
+        case "black-olives":
+          singleToppingPrice = 120;
+          break;
+        default:
+          singleToppingPrice = 0;
+      }
+      toppingsPrice += singleToppingPrice;
+    });
+    singlePizzaPrice = toppingsPrice + crustPrice + mediumPrice;
+    if (this.deliver == "yes") {
+      totalPrice = (singlePizzaPrice * this.quantity) + deliveryPrice;
+    } else {
+      totalPrice = singlePizzaPrice * this.quantity;
+    }
+  }

@@ -12,3 +12,30 @@ body{
   background-color: blue;
   color: white;
 }
+.navbar{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 0px;
+}
+.navbar li{
+  float: left;
+}
+.navbar li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background-color: #111;
+}
+.active{
+  background-color: #4CAF50;
+}

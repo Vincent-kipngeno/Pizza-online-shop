@@ -190,3 +190,12 @@ $(document).ready(function(){
     arrayOfOrders.push(newOrder);
     $(".another-order").show();
     $(".checkout").show();
+    $(".another-order").click(function(){
+      $(".topping").prop("checked", false);
+      $(".delivery").prop("checked", false);
+      $(".size").val("");
+      $(".crust").val("");
+      $("#order").show();
+      $(".another-order").hide();
+      $(".checkout").hide();
+    });

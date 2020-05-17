@@ -144,3 +144,16 @@ order.prototype.orderDetails = function () {
             "<li style = 'color: black;'> Charge: Kshs" + this.price() + "</li>" +
           "</ul>");
 };
+function handler(noOfPizzas, deliver, location){
+  var pizzaSize = $(".size").val();
+  var pizzaCrust = $(".crust").val();
+  if (deliver == "no") {
+    var area = "none";
+  } else {
+    var area = location;
+  }
+  newOrder = new order (pizzaSize, pizzaCrust, noOfPizzas, deliver, area);
+  $.each($("input[name='topping']:checked"), function(){
+    newOrder.toppings.push($(this).val());
+  });
+}

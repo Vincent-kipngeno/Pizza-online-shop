@@ -182,3 +182,11 @@ $(document).ready(function(){
       alert("Your pizza will be delivered to your location " + location + " as soon as you checkout. You can as well make another order before checking out")
     }
     handler(numberOfPizzas, delivery, location);
+    $(".total-charge").append("<li>" + newOrder.size + " pizza(s), Total charge: kshs" + newOrder.price() + "</li>");
+    $("input#amount").val("");
+    $(".submit").hide();
+    $(".order-charge").hide();
+    $(".amount").hide();
+    arrayOfOrders.push(newOrder);
+    $(".another-order").show();
+    $(".checkout").show();

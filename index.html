@@ -86,5 +86,42 @@
               </div>
               <button type="button" id="order" name="button">ORDER</button>
             </div>
-
         </div>
+        <div class="col-md-6">
+          <div class="form-group order-charge" style = 'color: red'>
+
+          </div>
+          <div class="amount card">
+            <div class="form-group amount">
+              <label for="">How many pizzas do you want:<input type="number" name="number" id="amount" value=""min="1" size="4" required ></label>
+            </div>
+            <div class="form-group">
+              Do you want your pizza delivered:<br>
+              <ul class="" >
+                <li class="list-unstyled list-inline-item"><label for="yes"><input type="radio" name="delivery" class="delivery" value="yes" required>Yes</label></li>
+                <li class="list-unstyled list-inline-item"><label for="yes"><input type="radio" name="delivery" class="delivery" value="no">No</label></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <input type="submit" class="submit" name="submit" value="submit">
+            <ul class="total-charge" style="color: red;">
+
+            </ul>
+            <button type="button" class="another-order" name="button">Make New Order</button>
+          </div>
+        </form>
+
+          <div class="card">
+            <button type="button" class="checkout"name="button">CHECKOUT</button>
+            <div class="order-details">
+
+            </div>
+            <span id="total-charge" style="color: black"></span>
+            <button type="button" class="clear" name="button">CLEAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

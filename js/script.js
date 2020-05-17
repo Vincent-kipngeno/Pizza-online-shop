@@ -208,3 +208,8 @@ $(document).ready(function(){
       if (totalCharge > 0) {
         $("#total-charge").append("The total Charge is: Kshs " + totalCharge);
       }
+      arrayOfOrders.splice(0, arrayOfOrders.length);
+      $(".clear").show();
+      $(".another-order").hide();
+      $(".total-charge").empty();
+    });

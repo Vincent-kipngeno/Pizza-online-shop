@@ -133,3 +133,14 @@ order.prototype.price = function () {
   }
   return totalPrice;
 };
+order.prototype.orderDetails = function () {
+  return ("<span style = 'color: red'>" + this.size + " sized pizza(s):</span>" +
+          "<ul>" +
+            "<li>Crust: " + this.crust + "</li>" +
+            "<li>Topping(s):" + this.toppings.join(', ') + "</li>" +
+            "<li>Quantity: " + this.quantity + "</li>" +
+            "<li>Delivery: " + this.deliver + "</li>" +
+            "<li>Location: " + this.location + "</li>" +
+            "<li style = 'color: black;'> Charge: Kshs" + this.price() + "</li>" +
+          "</ul>");
+};

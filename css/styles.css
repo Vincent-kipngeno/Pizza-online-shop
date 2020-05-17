@@ -39,3 +39,8 @@ body{
 .active{
   background-color: #4CAF50;
 }
+.col-md-4 img{
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

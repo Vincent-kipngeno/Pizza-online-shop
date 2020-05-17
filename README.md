@@ -7,9 +7,9 @@ This web application is for ordering of pizzas online. User is given an option t
 * Browser( Google Chrome recommended)
 * Internet
 * Laptop/or smartphone
-* Access it via this live link
+* Access it via this live link  https://vincent-kipngeno.github.io/Pizza-online-shop/
 * Or have git and Github account,
-* Fork then clone git clone
+* Fork then clone git clone https://github.com/Vincent-kipngeno/Pizza-online-shop.git
 ## Known Bugs
 So far there are no bugs known in this app. But if you come across one feel free to raise or even solve it.
   Feel free to help solving the issue.

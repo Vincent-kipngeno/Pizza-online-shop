@@ -199,3 +199,12 @@ $(document).ready(function(){
       $(".another-order").hide();
       $(".checkout").hide();
     });
+    $(".checkout").off("click").on("click",function(){
+      var totalCharge = 0;
+      arrayOfOrders.forEach(function(arrayOfOrder) {
+        $(".order-details").append(arrayOfOrder.orderDetails());
+        totalCharge += arrayOfOrder.price();
+     });
+      if (totalCharge > 0) {
+        $("#total-charge").append("The total Charge is: Kshs " + totalCharge);
+      }

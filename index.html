@@ -29,3 +29,62 @@
       <h3>WELCOME TO</h3>
       <h1>PIZZA MTANDAO</h1>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="image">
+            <img src="./images/pizza2.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image">
+            <img src="./images/pizza2.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="image">
+            <img src="./images/pizza2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="column-md-6">
+        <form class="form" action="index.html" class="" method="post">
+            <div class="card">
+              <div class="form-group card-body ">
+                <label for="size">Choose size: </label>
+                <select class="size" name="pizzaSize" required>
+                  <option value="">----</option>
+                  <option value="large">Large @1500/=</option>
+                  <option value="medium">Medium @1000/=</option>
+                  <option value="small">Small @500/=</option>
+                </select>
+              </div>
+              <div class="form-group card-body">
+                <label for="crust">Choose Crust: </label>
+                <select class="crust" name="pizzaCrust">
+                  <option value="none">----</option>
+                  <option value="crispy">Crispy @50/=</option>
+                  <option value="stuffed">Stuffed @80/=</option>
+                  <option value="glutten-free">Glutten free @100/=</option>
+                  <option value="flatbread">Flatbread @120/=</option>
+                </select>
+              </div>
+              <hr>
+              <div class="form-group  topping card-body">
+                Choose Topping: <br>
+                <ul>
+                  <li class="list-unstyled"><label for=""><input type="checkbox" class="topping" name="topping" value="pepperoni">pepperoni small:60/= medium:100/= large:140/=</label></li>
+                  <li class="list-unstyled"><label for=""><input type="checkbox" class="topping" name="topping" value="onions">onions small:40/= medium:80/= large:120/=</label></li>
+                  <li class="list-unstyled"><label for=""><input type="checkbox" class="topping" name="topping" value="sausage">sausage small:100/= medium:140/= large:180/=</label></li>
+                  <li class="list-unstyled"><label for=""><input type="checkbox" class="topping" name="topping" value="bacon">bacon small:150/= medium:200/= large:250/=</label></li>
+                  <li class="list-unstyled"><label for=""><input type="checkbox" class="topping" name="topping" value="extra-cheese">extra cheese small:100/= medium:150/= large:200/=</label></li>
+                  <li class="list-unstyled"><label for=""><input type="checkbox"class="topping" name="topping" value="black-olives">black olives small:100/= medium:120/= large:140/=</label></li>
+                </ul>
+              </div>
+              <button type="button" id="order" name="button">ORDER</button>
+            </div>
+
+        </div>

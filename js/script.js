@@ -157,3 +157,18 @@ function handler(noOfPizzas, deliver, location){
     newOrder.toppings.push($(this).val());
   });
 }
+
+
+$(document).ready(function(){
+  var arrayOfOrders = [];
+  $("#order").click(function(){
+    var numberOfPizzas = 1;
+    var delivery = "no";
+    handler(numberOfPizzas, delivery);
+    newOrder.price();
+    $(".order-charge").text("Price of the single pizza is: " + singlePizzaPrice);
+    $(".order-charge").show();
+    $(".amount").show();
+    $(".submit").show();
+    $("#order").hide();
+  });

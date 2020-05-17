@@ -172,3 +172,13 @@ $(document).ready(function(){
     $(".submit").show();
     $("#order").hide();
   });
+  $(".form").submit(function(event){
+    event.preventDefault();
+    var numberOfPizzas = parseInt($("#amount").val());
+    var delivery = $("input[name='delivery']:checked").val();
+    if (delivery == "yes") {
+      alert("The cost of delivery is: Kshs" + deliveryPrice);
+      var location = prompt("Enter the location you want your pizza delivered");
+      alert("Your pizza will be delivered to your location " + location + " as soon as you checkout. You can as well make another order before checking out")
+    }
+    handler(numberOfPizzas, delivery, location);

@@ -213,3 +213,17 @@ $(document).ready(function(){
       $(".another-order").hide();
       $(".total-charge").empty();
     });
+    $(".clear").off("click").on("click",function(){
+      $(".topping").prop("checked", false);
+      $(".delivery").prop("checked", false);
+      $(".size").val("");
+      $(".crust").val("");
+      $("#order").show();
+      $(".another-order").hide();
+      $(".checkout").hide();
+      $(".order-details").empty();
+      $("#total-charge").empty();
+      $(".clear").hide();
+    });
+  });
+})
